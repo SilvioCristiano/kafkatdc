@@ -14,14 +14,14 @@ import java.util.UUID;
 public class CompatibleProducer {
 
     public void produce(String msg) {
-    	String authToken = "w[_k+1Wt3-.bAjz3r65G";
+    	String authToken = "6H<(r1HWId3w80flTgbP";
         String tenancyName = "oraclemetodista";
         String username = "silvio.da.silva@oracle.com";
-        String streamingId = "ocid1.streampool.oc1.sa-saopaulo-1.amaaaaaaeun4owyaq7alrbfj6mzjc7orezdpdlbwf6pki2qe4gdgbdu2jgja";
-        String topicName = "VerificarEligibilidadeQ";
+        String streamingId = "oraclemetodista/silvio.da.silva@oracle.com/ocid1.streampool.oc1.phx.amaaaaaaeun4owyaohyjhfxjk3v52p4uhznswvcj4lyfdcfb23kqu3unbhyq";
+        String topicName = "HACK-STREAM";
 
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "https://cell-1.streaming.sa-saopaulo-1.oci.oraclecloud.com:9092");
+        properties.put("bootstrap.servers", "https://cell-1.streaming.us-phoenix-1.oci.oraclecloud.com:9092");
         properties.put("security.protocol", "SASL_SSL");
         properties.put("sasl.mechanism", "PLAIN");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
