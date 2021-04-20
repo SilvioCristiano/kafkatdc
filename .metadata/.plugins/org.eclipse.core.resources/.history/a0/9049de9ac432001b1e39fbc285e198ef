@@ -1,0 +1,38 @@
+package com.oracle.tdc.kafka;
+
+import com.google.gson.Gson;
+import com.oracle.tdc.msg.Customer;
+
+public class Registry {
+
+	public void registryCustomer(Customer cus) {
+		String name = cus.getName();
+		int age = cus.getAge();
+		String cpf = cus.getCpf();
+		String msgJ = writeJSON(name, age, cpf);
+		CompatibleProducer cp = new CompatibleProducer();
+		System.out.println(msgJ);
+		cp.produce(msgJ);
+	}
+
+	public String writeJSON( String name, int age, String cpf )
+	{
+		// --- criar objeto cliente --- //
+		Customer objCliente = new Customer(name, age, cpf);
+
+		objCliente.setName(name);
+		objCliente.setAge(age);
+		objCliente.setCpf(cpf);
+		
+
+		// --- transformando em JSON --- //
+		Gson gson = new Gson(); // conversor
+		String json = gson.toJson( objCliente );
+
+		// exibindo o JSON //
+		System.out.println( json );
+		return json;
+	}
+
+
+}

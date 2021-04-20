@@ -1,0 +1,18 @@
+package com.oracle.tdc.kafka;
+
+import com.oracle.tdc.msg.Customer;
+
+public class KafkaConsumerExample {
+
+    public static void main(String... args) throws Exception {
+        System.out.println("consumer");
+        Registry consumer = new Registry();
+        Customer c = new Customer();
+        c.setName("Silvio Cristiano");
+        c.setAge(78);
+        c.setCpf("009887777");
+        
+        consumer.registryCustomer(c);
+    }
+
+}

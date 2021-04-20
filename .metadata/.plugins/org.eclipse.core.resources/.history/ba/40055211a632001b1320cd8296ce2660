@@ -1,0 +1,91 @@
+package com.oracle.tdc.kafka;
+
+import java.security.NoSuchAlgorithmException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Collections;
+import java.util.Properties;
+
+import javax.crypto.Cipher;
+
+import oracle.jdbc.OracleConnection;
+
+public class JDBCTest {
+
+  public static void fail(String msg){
+    System.err.println(String.join("", Collections.nCopies(20, "*")));
+    System.err.println(msg);
+    System.err.println(String.join("", Collections.nCopies(20, "*")));
+    System.exit(1);
+  }
+  public static void main(String[] args) throws SQLException {
+    System.out.println("JDBC Driver Version:" + oracle.jdbc.OracleDriver.getDriverVersion());
+
+    // Check JDBC Driver Version
+    if (!oracle.jdbc.OracleDriver.getDriverVersion().startsWith("18.")) {
+      fail(" DRIVER TOOO OLD!!!");
+    }
+
+    // Check JCE Installed
+    int maxKeySize = 0;
+    try {
+      maxKeySize = Cipher.getMaxAllowedKeyLength("AES");
+    } catch (NoSuchAlgorithmException e) {
+    }
+    if (maxKeySize < 129 ) {
+      fail(" JCE Policy not unlimited!!!");      
+    }
+
+    // Check Classpath
+
+    String cp = System.getProperty("java.class.path");
+
+    String[] cpFiles = {"ojdbc8.jar","oraclepki.jar","osdt_cert.jar","osdt_core.jar"};
+
+    for (String file:cpFiles){
+      if ( cp.indexOf(file) == -1 ){
+        fail("CLASSPATH Missing:" + file);
+
+      }
+    }
+    // Wallet unziped location
+    String unzippedWalletLocation = "/Users/klrice/workspace/12.2JDBC/wallet";
+
+
+
+    String conString = "jdbc:oracle:thin:@sqldev_medium";
+
+
+    Properties props = new Properties();
+    props.setProperty("oracle.net.wallet_location",unzippedWalletLocation);
+
+    props.setProperty(OracleConnection.CONNECTION_PROPERTY_THIN_NET_CONNECT_TIMEOUT, "2000");
+
+    // unzipped includes a tnsnames.ora
+    props.setProperty("oracle.net.tns_admin",unzippedWalletLocation);
+    props.setProperty("javax.net.ssl.trustStore","truststore.jks");
+    props.setProperty("javax.net.ssl.trustStorePassword","##SRcrise2020");
+    props.setProperty("javax.net.ssl.keyStore","keystore.jks");
+    props.setProperty("javax.net.ssl.keyStorePassword","##SRcrise2020");
+    props.setProperty("oracle.net.ssl_server_dn_match","true");    
+    props.setProperty("oracle.net.ssl_version","1.2");
+
+
+    props.setProperty("user", "ADMIN");
+    props.setProperty("password", "##SRcrise2020");
+
+    try { 
+      // now Connect 
+      Connection conn = DriverManager.getConnection(conString,props);
+    } catch (Exception e){
+      e.printStackTrace();
+      fail(e.getLocalizedMessage());
+    }
+
+    System.out.println("SUCCESS!!");
+
+
+  }
+
+}

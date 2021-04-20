@@ -1,0 +1,62 @@
+package com.oracle.tdc.kafka;
+
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.errors.WakeupException;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+
+import com.google.gson.Gson;
+import com.oracle.tdc.msg.Customer;
+
+import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import net.minidev.json.parser.ParseException;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Properties;
+
+public class CompatibleConsumer {
+
+	public String message_cadastroq = null;
+
+	public void registryCustomer(Customer cus) {
+		String name = cus.getName();
+		int age = cus.getAge();
+		String cpf = cus.getCpf();
+		String msgJ = writeJSON(name, age, cpf);
+		CompatibleProducer cp = new CompatibleProducer();
+		System.out.println(msgJ);
+		cp.produce(msgJ);
+	}
+
+
+
+	public String writeJSON( String name, int age, String cpf )
+	{
+		// --- criar objeto cliente --- //
+		Customer objCliente = new Customer(name, age, cpf);
+
+		objCliente.setName(name);
+		objCliente.setAge(age);
+		objCliente.setCpf(cpf);
+		objCliente.setStatus("Aprovado");
+
+		// --- transformando em JSON --- //
+		Gson gson = new Gson(); // conversor
+		String json = gson.toJson( objCliente );
+
+		// exibindo o JSON //
+		System.out.println( json );
+		return json;
+	}
+
+
+}

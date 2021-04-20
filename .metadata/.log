@@ -1,0 +1,1523 @@
+!SESSION 2020-12-01 01:17:36.844 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_271
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\Users\scdasilv\Documents\Projects\Projects\edadb -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\scdasilv\Documents\Projects\Projects\edadb\.metadata\.bak_0.log
+Created Time: 2020-12-01 01:17:39.825
+
+!ENTRY oracle.eclipse.tools.maf.dt.v212 4 0 2020-12-01 01:17:39.828
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v212 [1042]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.mobile [991]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view.ui [993]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.view [992]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                                     No resolution report for the bundle.                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf [1098]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.ui [1100]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.controller.ui [978]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.adf.debugger.ui [980]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v213 4 0 2020-12-01 01:17:39.920
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v213 [1043]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.mobile [991]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view.ui [993]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.view [992]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                                     No resolution report for the bundle.                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf [1098]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.ui [1100]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.controller.ui [978]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.adf.debugger.ui [980]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v22 4 0 2020-12-01 01:17:40.035
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v22 [1044]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v221 4 0 2020-12-01 01:17:40.142
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v221 [1045]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v222 4 0 2020-12-01 01:17:40.247
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v222 [1046]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.mobile [991]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view.ui [993]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.view [992]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                                     No resolution report for the bundle.                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf [1098]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.ui [1100]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.controller.ui [978]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.adf.debugger.ui [980]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v23 4 0 2020-12-01 01:17:40.376
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v23 [1047]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v231 4 0 2020-12-01 01:17:40.504
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v231 [1048]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v232 4 0 2020-12-01 01:17:40.617
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v232 [1049]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.mobile [991]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view.ui [993]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.view [992]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                                     No resolution report for the bundle.                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf [1098]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.ui [1100]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.controller.ui [978]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.adf.debugger.ui [980]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.dt.v233 4 0 2020-12-01 01:17:40.736
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.dt.v233 [1050]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.maf.dt.common; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.maf.dt.common; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.maf.dt.common [1037]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.mobile [991]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view.ui [993]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.view [992]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                                     No resolution report for the bundle.                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.webtier.jsf [1098]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.ui [1100]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.controller.ui [978]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                   oracle.eclipse.tools.adf.debugger.ui [980]
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                       -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.vm.v20 4 0 2020-12-01 01:17:40.845
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.vm.v20 [1056]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.maf.vm.v21 4 0 2020-12-01 01:17:40.945
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.maf.vm.v21 [1057]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.rest.client.ide 4 0 2020-12-01 01:17:41.055
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.rest.client.ide [1062]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.mobile; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.adf.mobile; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.adf.mobile [991]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view.ui; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.adf.view.ui [993]
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.view [992]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.webtier.jsf [1098]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.webtier.jsf.ui [1100]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.controller.ui; bundle-version="[17.2.0,18.0.0)"
+                  -> Bundle-SymbolicName: oracle.eclipse.tools.adf.controller.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                     oracle.eclipse.tools.adf.controller.ui [978]
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.view; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.view; bundle-version="17.2.0.201806071916"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: oracle.eclipse.tools.adf.debugger.ui; bundle-version="[17.2.0,18.0.0)"
+                         -> Bundle-SymbolicName: oracle.eclipse.tools.adf.debugger.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+                            oracle.eclipse.tools.adf.debugger.ui [980]
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="[17.2.0,18.0.0)"
+                                -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.ui; bundle-version="17.2.0.201806071916"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.adf.view [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.adf.view"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.jsf"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf 4 0 2020-12-01 01:17:41.092
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf [1098]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsf.facelet [1099]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.javawebapp)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.javawebapp"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf.facelet 4 0 2020-12-01 01:17:41.122
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf.facelet [1099]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] because it exports package 'javax.servlet' and is also exposed to it from resource javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via the following dependency chain:
+
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.javawebapp)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.javawebapp"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY oracle.eclipse.tools.webtier.jsf.ui 4 0 2020-12-01 01:17:41.180
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: oracle.eclipse.tools.webtier.jsf.ui [1100]
+  Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf; bundle-version="[17.2.0,18.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf; bundle-version="17.2.0.201806071916"; singleton:="true"
+       oracle.eclipse.tools.webtier.jsf [1098]
+         Unresolved requirement: Require-Bundle: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="[17.2.0,18.0.0)"
+           -> Bundle-SymbolicName: oracle.eclipse.tools.webtier.jsf.facelet; bundle-version="17.2.0.201806071916"; singleton:="true"
+              oracle.eclipse.tools.webtier.jsf.facelet [1099]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"] because it is exposed to package 'javax.servlet' from resources oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"] and javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"] via two dependency chains.
+
+Chain 1:
+  oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.jsf.facelet)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle: oracle.eclipse.tools.webtier.jsf.facelet
+  oracle.eclipse.tools.webtier.jsf.facelet [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf.facelet"; singleton:="true"]
+
+Chain 2:
+  oracle.eclipse.tools.webtier.jsf [osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.jsf"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=oracle.eclipse.tools.webtier.javawebapp)(&(bundle-version>=17.2.0)(!(bundle-version>=18.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="17.2.0.201806071916"; osgi.wiring.bundle="oracle.eclipse.tools.webtier.javawebapp"; singleton:="true"
+  org.apache.commons.logging [osgi.identity; type="osgi.bundle"; version:Version="1.2.0.v20180409-1502"; osgi.identity="org.apache.commons.logging"]
+    import: (osgi.wiring.package=javax.servlet)
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; type="osgi.bundle"; version:Version="3.1.0.v201410161800"; osgi.identity="javax.servlet"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-12-01 01:17:42.950
+!MESSAGE Both 'oracle.eclipse.tools.adf.dtrt.vcommon' and 'oracle.eclipse.tools.adf.dtrt.vcommon' register an extension parser for 'xml'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-12-01 01:17:42.953
+!MESSAGE Both 'oracle.eclipse.tools.adf.dtrt.vcommon' and 'oracle.eclipse.tools.adf.dtrt.vcommon' register an extension parser for 'xml'
+
+!ENTRY org.eclipse.jface 2 0 2020-12-01 01:17:49.397
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-01 01:17:49.397
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76cad511,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ff52a71,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:00.910
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:00.913
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@4260de0d[org.springframework.tooling.boot.ls:1.23.0.202010230633(id=1176)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:00.920
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:01.022
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.osgi 4 0 2020-12-01 01:18:04.906
+!MESSAGE An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+!STACK 0
+org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+Root exception:
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+
+!ENTRY org.eclipse.ui.workbench 4 2 2020-12-01 01:18:04.919
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-12-01 01:18:04.920
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-12-01 01:18:04.921
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+
+!ENTRY org.eclipse.ui 4 0 2020-12-01 01:18:04.925
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'oracle.eclipse.tools.webtier.ui' plug-in.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	... 10 more
+Caused by: org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2020-12-01 01:18:04.926
+!MESSAGE Plug-in oracle.eclipse.tools.webtier.ui was unable to load class oracle.eclipse.tools.webtier.ui.internal.WebtierUIStartup.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle oracle.eclipse.tools.webtier.ui (1109).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2701)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.osgi.framework.BundleException: Error starting module. osgi.identity; type="osgi.bundle"; version:Version="17.2.0.201806071916"; osgi.identity="oracle.eclipse.tools.webtier.ui"; singleton:="true" [id=1109]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:614)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/template/java/CodeTemplateContextType
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.template.java.CodeTemplateContextType cannot be found by oracle.eclipse.tools.webtier.ui_17.2.0.201806071916
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-01 01:18:05.144
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\scdasilv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.025
+!MESSAGE Boot LS startup time from start to initialized: 6083ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.297
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tuGcXwleisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.302
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.305
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.306
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.307
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.309
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tuGcXwle => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.333
+!MESSAGE classpath=141 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.345
+!MESSAGE buffering callback sts4.classpath.tuGcXwle tdc false 141
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.347
+!MESSAGE executing callback sts4.classpath.tuGcXwle 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:18:07.391
+!MESSAGE executing callback sts4.classpath.tuGcXwle SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-12-01 01:18:41.000
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.debug.ui 4 0 2020-12-01 01:25:47.156
+!MESSAGE Launch shortcut 'oracle.eclipse.tools.cloud.apaas.ui.apaasRunAction' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.wst.common.project.facet.core.projectFacet to type class org.eclipse.ui.part.FileEditorInput
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:130)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:283)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:214)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4213)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1046)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:760)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1232)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1212)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$7(ActionContributionItem.java:1175)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4213)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1042)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5137)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4769)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2142)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4923)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2020-12-01 01:25:47.157
+!MESSAGE No property tester contributes a property org.eclipse.wst.common.project.facet.core.projectFacet to type class org.eclipse.ui.part.FileEditorInput
+
+!ENTRY org.eclipse.ui 2 2 2020-12-01 01:26:23.481
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-12-01 01:38:36.658
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-12-01 01:41:37.820
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:44:10.918
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tuGcXwle
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:44:10.919
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.tuGcXwle
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:44:10.920
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-01 01:44:10.921
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tuGcXwle => OK

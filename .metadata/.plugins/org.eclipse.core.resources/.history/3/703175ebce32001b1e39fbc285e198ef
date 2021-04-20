@@ -1,0 +1,101 @@
+package com.oracle.tdc.kafka;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.google.gson.Gson;
+import com.oracle.tdc.msg.Customer;
+
+public class Registry {
+	
+	private Connection connection;
+	private PreparedStatement statement;
+	private boolean estadoOperacao;
+
+	public void registryCustomer(Customer cus) {
+		String name = cus.getName();
+		int age = cus.getAge();
+		String cpf = cus.getCpf();
+		String msgJ = writeJSON(name, age, cpf);
+		CompatibleProducer cp = new CompatibleProducer();
+		System.out.println(msgJ);
+		cp.produce(msgJ);
+	}
+
+	public String writeJSON( String name, int age, String cpf )
+	{
+		// --- criar objeto cliente --- //
+		Customer objCliente = new Customer(name, age, cpf);
+
+		objCliente.setName(name);
+		objCliente.setAge(age);
+		objCliente.setCpf(cpf);
+		
+
+		// --- transformando em JSON --- //
+		Gson gson = new Gson(); // conversor
+		String json = gson.toJson( objCliente );
+
+		// exibindo o JSON //
+		System.out.println( json );
+		return json;
+	}
+	
+	public long inserirUsuario(Customer cus) throws SQLException {
+		String sql = null;
+		long id_gerado = 0;
+		estadoOperacao = false;
+		connection = obterConexao();
+		
+		try {
+			connection.setAutoCommit(false);
+			sql = "INSERT INTO usuario(id_usuario, nome, email, senha) VALUES(?, ?, ?, ?)";
+			
+			statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			
+			statement.setString(1, null);
+			statement.setString(2, cus.getName());
+			statement.setInt(3, cus.getAge());
+			statement.setString(4, cus.getCpf());
+			statement.setString(5, cus.getStatus());
+			
+			estadoOperacao =  statement.executeUpdate() > 0;
+			if (estadoOperacao == false) {
+				throw new SQLException("Falha na criação do usuário");
+			}
+
+			try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
+				if (generatedKeys.next()) {
+					id_gerado = generatedKeys.getLong(1);
+				}
+				else {
+					throw new SQLException("Falha na criação do usuário, nenhum ID obtido.");
+				}
+			}
+			
+			connection.commit();
+			statement.close();
+		} catch (SQLException e) {
+			connection.rollback();
+			e.printStackTrace();
+		}finally{
+			System.out.println("fechou");
+			connection.close();
+		}
+		
+		return id_gerado;
+	}
+
+	private Connection obterConexao() {
+		// TODO Auto-generated method stub
+		return Conn;
+	}
+	
+
+
+
+}

@@ -1,0 +1,65 @@
+package com.oracle.tdc.kafka;
+
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import oracle.jdbc.OracleConnection;
+import oracle.jdbc.pool.OracleDataSource;
+/*
+ * The method shows how to use DRCP when a third party client side connection 
+ * pool is used.  Make sure that connection URL used is correct and DRCP is 
+ * configured both at the server side and client side. 
+ */
+public class DRCPSample {
+  final static String DRCP_URL= "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(HOST=myhost)(PORT=1521)(PROTOCOL=tcp))(CONNECT_DATA=(SERVICE_NAME=myorcldbservicename)(server=POOLED)))";
+  final static String DB_USER = "hr";
+  final static String DB_PASSWORD = "hr";
+
+  static public void main(String args[]) throws SQLException {
+    // Create an OracleDataSource instance and set properties
+    OracleDataSource ods = new OracleDataSource();
+    ods.setUser(DB_USER);
+    ods.setPassword(DB_PASSWORD);
+    // Make sure to use the correct DRCP URL. Refer to sample DRCP URL.
+    ods.setURL(DRCP_URL);
+    // "Connection class" allows dedicating a subset of pooled server to
+    // a specific application. Several connection classes may be 
+    // used for different applications
+    Properties connproperty = new Properties();
+    connproperty.setProperty("oracle.jdbc.DRCPConnectionClass",
+        "DRCP_connect_class");
+    ods.setConnectionProperties(connproperty);
+
+    // AutoCloseable: Closes a resource that is no longer needed.
+    // With AutoCloseable, the connection is closed automatically.
+    try (OracleConnection connection = (OracleConnection) (ods.getConnection())) {
+      System.out.println("DRCP enabled: " + connection.isDRCPEnabled());
+      // Explicitly attaching the connection before its use
+      // Required when the client side connection pool is not UCP
+      connection.attachServerConnection();
+      // Perform any database operation
+      doSQLWork(connection);      
+      // Explicitly detaching the connection
+      // Required when the client side connection pool is not UCP
+      connection.detachServerConnection((String) null);
+    }
+  }  
+ /*
+  * Displays system date(sysdate). Shows a simple database operation. 
+  */
+  public static void doSQLWork(Connection connection) throws SQLException {
+    // Statement and ResultSet are AutoCloseable by this syntax
+    try (Statement statement = connection.createStatement()) {
+      try (ResultSet resultSet = statement
+          .executeQuery("select SYSDATE from DUAL")) {
+        while (resultSet.next())
+          System.out.print("Today's date is " + resultSet.getString(1) + " ");
+      }
+    }
+    System.out.println("\n");
+  } 
+}

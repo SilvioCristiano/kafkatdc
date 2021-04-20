@@ -1,0 +1,60 @@
+package com.oracle.tdc.kafka;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+
+import com.oracle.tdc.msg.Customer;
+
+import oracle.jdbc.pool.OracleDataSource;
+import oracle.jdbc.OracleConnection;
+import java.sql.DatabaseMetaData;
+import java.sql.PreparedStatement;
+
+
+public class AtpConnection
+{
+	final static String DB_URL="jdbc:oracle:thin:@tdcdb_high";
+	final static String DB_USER = "TDC";
+	final static String DB_PASSWORD = "##SRcrise2020";
+	
+	private PreparedStatement statement;
+
+	public Customer insert(Customer cus) throws SQLException, ClassNotFoundException {
+
+
+		System.setProperty("oracle.net.tns_admin","C:\\oci\\Wallet_TDCDB");
+		System.setProperty("oracle.jdbc.fanEnabled","false");
+
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		OracleDataSource ods = new OracleDataSource();
+		ods.setURL(DB_URL);
+		ods.setUser(DB_USER);
+		ods.setPassword(DB_PASSWORD);
+
+		// With AutoCloseable, the connection is closed automatically.
+		try (OracleConnection connection = (OracleConnection)
+				ods.getConnection()) {
+			// Get the JDBC driver name and version
+			DatabaseMetaData dbmd = connection.getMetaData();
+			System.out.println("Driver Name: " + dbmd.getDriverName());
+			System.out.println("Driver Version: " +
+					dbmd.getDriverVersion());
+			System.out.println("Database Username is: " +
+					connection.getUserName());
+			Statement st = connection.createStatement();
+			int c = st.executeUpdate("INSERT INTO CUSTOMER(NAME, AGE, CPF, STATUS, IDCUS) VALUES('Silvio', '15', '99999888', 'Aprovado', '02')");
+			System.out.println(c + " more account stored successfully");
+			
+		}
+		
+		return cus;
+	}
+
+
+
+}
